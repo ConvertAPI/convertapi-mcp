@@ -53,14 +53,48 @@ dotnet run --project "CA.MCP.Local"
 
 Add to your `claude_desktop_config.json`:
 
-{ "mcpServers": { "convertapi": { "command": "dotnet", "args": [ "run", "--project", "C:\\Path\\To\\CA.MCP.Local\\CA.MCP.Local.csproj", "--no-build" ], "env": { "CONVERTAPI_SECRET": "your_api_secret_here", "CONVERTAPI_BASE_URI": "https://v2.convertapi.com" } } } }
+```json
+{
+  "mcpServers": {
+    "convertapi": {
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "C:\\Path\\To\\CA.MCP.Local\\CA.MCP.Local.csproj",
+        "--no-build"
+      ],
+      "env": {
+        "CONVERTAPI_SECRET": "your_api_secret_here",
+        "CONVERTAPI_BASE_URI": "https://v2.convertapi.com"
+      }
+    }
+  }
+}
+```
 
 
 ### Cline (VSCode Extension)
 
 Add to your MCP settings in Cline:
-{ "convertapi": { "command": "dotnet", "args": ["run", "--project", "/path/to/CA.MCP.Local", "--no-build"], "env": { "CONVERTAPI_SECRET": "your_api_secret_here", "CONVERTAPI_BASE_URI": "https://v2.convertapi.com" } } }
 
+```json
+{
+  "convertapi": {
+    "command": "dotnet",
+    "args": [
+      "run",
+      "--project",
+      "/path/to/CA.MCP.Local",
+      "--no-build"
+    ],
+    "env": {
+      "CONVERTAPI_SECRET": "your_api_secret_here",
+      "CONVERTAPI_BASE_URI": "https://v2.convertapi.com"
+    }
+  }
+}
+```
 
 ## Available Tools
 
