@@ -8,7 +8,7 @@ A [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that pr
 - ✅ **OpenAPI-Driven Validation** - Dynamic parameter validation against ConvertAPI's live OpenAPI specification
 - 🎯 **Comprehensive Parameters** - Supports all ConvertAPI parameters including PageSize, PageOrientation, Quality, StoreFile, etc.
 - 🤖 **AI-Ready** - Seamlessly integrates with Claude Desktop, Cline, and other MCP-compatible AI assistants
-- 📦 **Local ** - Supports local file operations
+- 📦 **Local** - Supports local file operations
 
 ## Installation
 
