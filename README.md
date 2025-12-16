@@ -15,7 +15,7 @@ A [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that pr
 ### Prerequisites
 
 - .NET 9.0 SDK or later
-- A ConvertAPI account and API secret ([Get one free](https://www.convertapi.com/))
+- A ConvertAPI account and API secret ([Get one free](https://www.convertapi.com/a/authentication))
 
 ### Configuration
 
