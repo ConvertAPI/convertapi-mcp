@@ -1,5 +1,7 @@
 ﻿# ConvertAPI MCP Server
 
+> Our hosted MCP server is available at https://mcp.convertapi.io - read more about it in the [Hosted MCP section below](#prefer-a-hosted-mcp-no-setup-required).
+
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that provides AI assistants with powerful file format conversion capabilities through the [ConvertAPI](https://www.convertapi.com/) service. Convert documents, images, spreadsheets, presentations, and more between 200+ file formats with OpenAPI-driven parameter validation.
 
 ## Features
@@ -95,6 +97,35 @@ Add to your MCP settings in Cline:
   }
 }
 ```
+
+## Prefer a Hosted MCP? (No Setup Required)
+
+If you do not want to install .NET or run your own server, you can use the **hosted ConvertAPI MCP** instead.
+
+**Hosted endpoint:**
+
+https://mcp.convertapi.io
+
+Just configure your MCP client to use the hosted endpoint and provide your ConvertAPI secret.
+
+### Example (Claude Desktop)
+
+```json
+{
+  "mcpServers": {
+    "convertapi": {
+      "url": "https://mcp.convertapi.io",
+      "env": {
+        "CONVERTAPI_SECRET": "your_api_secret_here"
+      }
+    }
+  }
+}
+```
+
+That’s it. Your AI agent can immediately start converting documents across 200+ formats using structured MCP tool calls.
+
+If you need full control, private networking, or custom deployment, continue with the self-hosted setup.
 
 ## Available Tools
 
