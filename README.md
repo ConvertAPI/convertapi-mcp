@@ -17,7 +17,7 @@ A [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that pr
 ### Prerequisites
 
 - .NET 9.0 SDK or later
-- A ConvertAPI account and API secret ([Get one free](https://www.convertapi.com/a/authentication))
+- A ConvertAPI account and API Token ([Get one free](https://www.convertapi.com/a/authentication))
 
 ### Configuration
 
@@ -25,14 +25,14 @@ A [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that pr
 
 git clone https://github.com/ConvertAPI/convertapi-mcp cd ConvertAPI-MCP
 
-2. Set your ConvertAPI secret as an environment variable:
+2. Set your ConvertAPI API Token as an environment variable:
 
 **Windows (PowerShell):**
-$env:CONVERTAPI_SECRET = "your_api_secret_here"
+$env:CONVERTAPI_TOKEN = "your_api_token_here"
 $env:CONVERTAPI_BASE_URI = "https://v2.convertapi.com"
 
 **Linux/macOS:**
-export CONVERTAPI_SECRET="your_api_secret_here"
+export CONVERTAPI_TOKEN="your_api_token_here"
 export CONVERTAPI_BASE_URI="https://v2.convertapi.com"
 
 
@@ -67,7 +67,7 @@ Add to your `claude_desktop_config.json`:
         "--no-build"
       ],
       "env": {
-        "CONVERTAPI_SECRET": "your_api_secret_here",
+        "CONVERTAPI_TOKEN": "your_api_token_here",
         "CONVERTAPI_BASE_URI": "https://v2.convertapi.com"
       }
     }
@@ -91,7 +91,7 @@ Add to your MCP settings in Cline:
       "--no-build"
     ],
     "env": {
-      "CONVERTAPI_SECRET": "your_api_secret_here",
+      "CONVERTAPI_TOKEN": "your_api_token_here",
       "CONVERTAPI_BASE_URI": "https://v2.convertapi.com"
     }
   }
@@ -106,7 +106,7 @@ If you do not want to install .NET or run your own server, you can use the **hos
 
 https://mcp.convertapi.io
 
-Just configure your MCP client to use the hosted endpoint and provide your ConvertAPI secret.
+Just configure your MCP client to use the hosted endpoint and provide your ConvertAPI API Token.
 
 ### Example (Claude Desktop)
 
@@ -116,7 +116,7 @@ Just configure your MCP client to use the hosted endpoint and provide your Conve
     "convertapi": {
       "url": "https://mcp.convertapi.io",
       "env": {
-        "CONVERTAPI_SECRET": "your_api_secret_here"
+        "CONVERTAPI_TOKEN": "your_api_token_here"
       }
     }
   }
