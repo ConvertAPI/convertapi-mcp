@@ -1,0 +1,14 @@
+{
+  "name": "convertapi-mcp",
+  "version": "1.0.0",
+  "description": "ConvertAPI MCP extension for file conversion and document processing workflows.",
+  "mcpServers": {
+    "convertapi": {
+      "httpUrl": "https://mcp.convertapi.com/",
+      "oauth": {
+        "enabled": true
+      }
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
