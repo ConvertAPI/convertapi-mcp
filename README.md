@@ -176,6 +176,24 @@ Depending on the conversion type, you can use parameters such as:
 
 The server automatically validates parameters against ConvertAPI's OpenAPI specification before conversion.
 
+## Claude Code Plugin
+
+In addition to a self-hosted MCP server, this repository provides a Claude Code plugin that connects Claude to ConvertAPI via MCP.
+
+### What it enables
+- Convert files between different formats directly from Claude
+- Automate document and image processing, extraxction, and transformations
+
+### Example usage
+- "Convert this PDF to DOCX"
+- "Merge these PDF files and apply a [Draft] watermark"
+- "Redact sensitive financial information on this PDF"
+- "Make this PDF print-ready with bleed and cropmarks"
+
+### Setup
+- Install plugin in Claude Code
+- Authenticate via OAuth
+
 
 ## Contributing
 
