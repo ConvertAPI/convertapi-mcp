@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "convertapi": {
+      "type": "http",
+      "url": "https://mcp.convertapi.com/",
+      "oauth": {
+        "enabled": true
+      }
+    }
+  }
+}
