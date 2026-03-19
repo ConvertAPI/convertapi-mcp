@@ -2,7 +2,7 @@
   "servers": {
     "convertapi": {
       "type": "http",
-      "url": "https://mcp.convertapi.com/",
+      "url": "https://mcp.convertapi.io",
       "oauth": {
         "enabled": true
       }
