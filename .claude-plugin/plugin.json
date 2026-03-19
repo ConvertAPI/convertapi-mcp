@@ -1,0 +1,26 @@
+{
+  "name": "convertapi",
+  "display_name": "ConvertAPI",
+  "owner": {
+    "name": "ConvertAPI",
+    "email": "support@convertapi.com"
+  },
+  "description": "Convert and transform files (PDF, DOCX, images, and more) directly inside Claude using ConvertAPI.",
+  "version": "1.0.0",
+  "author": "ConvertAPI",
+  "repository": "https://github.com/ConvertAPI/convertapi-mcp",
+  "homepage": "https://www.convertapi.com/",
+  "documentation_url": "https://github.com/ConvertAPI/convertapi-mcp#readme",
+  "support_url": "https://www.convertapi.com/support",
+  "keywords": [
+    "files",
+    "conversion",
+    "pdf",
+    "documents",
+    "images",
+    "mcp"
+  ],
+  "capabilities": {
+    "mcp": true
+  }
+}
