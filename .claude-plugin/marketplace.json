@@ -1,0 +1,16 @@
+{
+  "name": "convertapi",
+  "owner": {
+    "name": "ConvertAPI",
+    "email": "support@convertapi.com",
+    "url": "https://www.convertapi.com/"
+  },
+  "plugins": [
+    {
+      "name": "convertapi",
+      "source": "./",
+      "description": "Convert and transform files (PDF, DOCX, images, and more) directly inside Claude using ConvertAPI.",
+      "category": "productivity"
+    }
+  ]
+}
