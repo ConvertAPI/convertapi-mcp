@@ -205,7 +205,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Resources
 
-- [ConvertAPI Documentation](https://www.convertapi.com/doc)
+- [ConvertAPI Documentation](https://www.convertapi.com/docs)
 - [Model Context Protocol Specification](https://modelcontextprotocol.io)
 - [ConvertAPI .NET SDK](https://github.com/ConvertAPI/convertapi-library-dotnet)
 
