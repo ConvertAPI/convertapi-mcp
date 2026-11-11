@@ -39,6 +39,8 @@ export CONVERTAPI_BASE_URI="https://v2.convertapi.com"
 3. Build the project:
 dotnet build
 
+`CONVERTAPI_BASE_URI` is optional and defaults to `https://v2.convertapi.com`. To get a single-file executable, publish for your platform, for example `dotnet publish CA.MCP.Local -r osx-arm64` (or `win-x64`, `linux-x64`).
+
 ## Usage
 
 **Configuration:**
@@ -106,22 +108,24 @@ If you do not want to install .NET or run your own server, you can use the **hos
 
 https://mcp.convertapi.io
 
-Just configure your MCP client to use the hosted endpoint and provide your ConvertAPI API Token.
+Point your MCP client at the hosted endpoint. It uses OAuth, so the first time you connect your client opens a browser window where you sign in with your ConvertAPI account. You don't need to copy a token.
 
-### Example (Claude Desktop)
+### Example
 
 ```json
 {
   "mcpServers": {
     "convertapi": {
-      "url": "https://mcp.convertapi.io",
-      "env": {
-        "CONVERTAPI_TOKEN": "your_api_token_here"
-      }
+      "type": "http",
+      "url": "https://mcp.convertapi.io"
     }
   }
 }
 ```
+
+In Claude Desktop, you can also add it under Settings → Connectors → Add custom connector with the same URL.
+
+If your client doesn't support OAuth, send your ConvertAPI API token in a header instead: `Authorization: Bearer <your ConvertAPI API token>`.
 
 That’s it. Your AI agent can immediately start converting documents across 200+ formats using structured MCP tool calls.
 

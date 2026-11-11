@@ -2,12 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <OutputType>Exe</OutputType>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 
-    <!-- Set up the MCP server to be a single file executable -->
+    <!-- Set up the MCP server to be a single file executable (dotnet publish -r <rid>, for example win-x64, osx-arm64 or linux-x64) -->
     <PublishSingleFile>true</PublishSingleFile>
   </PropertyGroup>
 

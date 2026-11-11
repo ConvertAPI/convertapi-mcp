@@ -63,18 +63,19 @@ Then convert: convert(fromFormat='pdf', toFormat='jpg', parameters={'PageRange':
 
             outputDirectory ??= Path.Combine(firstFileDir ?? Directory.GetCurrentDirectory(), "converted_output");
 
-            var apiSecret = Environment.GetEnvironmentVariable("CONVERTAPI_SECRET")
-                ?? throw new InvalidOperationException("ConvertAPI secret is not configured. Set CONVERTAPI_SECRET environment variable.");
+            var apiToken = Environment.GetEnvironmentVariable("CONVERTAPI_TOKEN")
+                ?? throw new InvalidOperationException("ConvertAPI API token is not configured. Set the CONVERTAPI_TOKEN environment variable.");
 
-            var convertService = new ConvertService(apiSecret);
-            var outputs = await convertService.ConvertAsync(
+            var convertService = new ConvertService(apiToken);
+            var result = await convertService.ConvertAsync(
                 fromFormat,
                 toFormat,
                 outputDirectory,
                 parameters,
                 fileParameters);
 
-            return outputs.Select(url => Helpers.BuildSuccessResponse(new[] { url.ToString() })).ToArray();
+            // ConvertAsync already returns the JSON response (saved file paths or an error)
+            return new[] { result };
         }
         catch (Exception ex)
         {

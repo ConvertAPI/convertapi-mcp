@@ -25,4 +25,4 @@ Use this extension whenever:
 - Large files may take longer to process
 
 ## MCP Server
-Base URL: https://mcp.convertapi.com/
+Base URL: https://mcp.convertapi.io

@@ -11,14 +11,14 @@ namespace CA.MCP.Core.Services
         private readonly ConvertApi _convertApi;
         private readonly ILogger<ConvertService>? _logger;
 
-        public ConvertService(string apiSecret, ILogger<ConvertService>? logger = null)
+        public ConvertService(string apiToken, ILogger<ConvertService>? logger = null)
         {
             _logger = logger;   
             
-            if (string.IsNullOrWhiteSpace(apiSecret))
-                throw new ArgumentException("ConvertAPI secret cannot be null or empty.", nameof(apiSecret));
+            if (string.IsNullOrWhiteSpace(apiToken))
+                throw new ArgumentException("ConvertAPI API token cannot be null or empty.", nameof(apiToken));
             
-            _convertApi = new ConvertApi(apiSecret);
+            _convertApi = new ConvertApi(apiToken);
         }
 
         /// <summary>
